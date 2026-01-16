@@ -22,6 +22,7 @@ header{
         flex: 1;            
         display: flex;
         justify-content: center; 
+        position: relative;
     }
 
     ul#listacima{
@@ -48,11 +49,10 @@ header{
     ul#listaburguer{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        padding: 15px;
         list-style-type: none;
-        margin-top: 15px;
-        position: relative;
-        top: 128px;
+        position: absolute;
+        top: 60px;
         width: 215px;
         height: 145px;
         box-shadow: -1px 1px 9px #C8C8C8;
@@ -71,20 +71,17 @@ header{
         }
     }
 
-    button{
-        position: relative;
-        top: 84px;
-        left: 77px;
+    button#botaolista{
         width: 50px;
         height: 50px;
         box-shadow: -1px 1px 5px #C8C8C8; 
     }
 
-    button.btn{
+    button#botaolista.btn{
         transition: background-color .5s;
     }   
 
-    button.btn:hover{
+    button#botaolista.btn:hover{
         background-color:#C8C8C8;
     }
 
@@ -100,7 +97,7 @@ header{
     {
 
         nav#lista1 {
-            ul#listaburguer, button{
+            button#botaolista{
                 display: none;
             }    
         }
