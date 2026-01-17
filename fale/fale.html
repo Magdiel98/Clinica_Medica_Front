@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../img/favicon_clinica/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="./css_fale/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <title>Home</title>
+        <title>Agendar Consulta</title>
     </head>
     <body>
         <header>
@@ -31,7 +32,31 @@
             </nav>
         </header>
         <main>
+            <h1>FALE CONOSCO</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">NOME COMPLETO</label>
+                    <input type="text" id="name" name="name" class="form-control">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">TELEFONE</label>
+                    <input type="tel" id="telefone" name="telefone" class="form-control">
+                </div>
 
+                <div class="mb-3">
+                    <label for="email" class="form-label">EMAIL</label>
+                    <input type="email" id="email" name="email" class="form-control">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">MENSAGEM</label>
+                    <textarea class="form-control" name="mensagem" id="mensagem" rows="9">
+
+                    </textarea>
+                </div>
+            </form>
+            <button id="enviar">ENVIAR</button>
         </main>
         <footer>
             <div>
