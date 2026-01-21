@@ -18,6 +18,13 @@ main h1 {
 main div#sobretexto {
   display: grid;
 }
+main div#sobrecirurgiao > div.card-body, main div#sobredescricao > div.card {
+  display: flex;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center; /* centraliza vertical */
+  text-align: center; /* centraliza o texto */
+  padding: 20px;
+}
 main div#conjuntosobre {
   margin-top: 70px;
 }

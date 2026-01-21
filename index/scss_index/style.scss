@@ -23,6 +23,14 @@ main{
         display: grid;
     }
 
+    div#sobrecirurgiao > div.card-body, div#sobredescricao > div.card{
+        display: flex;
+        justify-content: center; /* centraliza horizontal */
+        align-items: center;     /* centraliza vertical */
+        text-align: center;      /* centraliza o texto */
+        padding: 20px;
+    }
+
     div#conjuntosobre{
         margin-top: 70px;
     }
