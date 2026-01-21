@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin-top: 155px;
+}
+main h1 {
+  margin-top: 80px;
+  color: #00BF62;
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: center;
+}
+main div#sobretexto {
+  display: grid;
+}
+main div#conjuntosobre {
+  margin-top: 70px;
+}
+main div#sobretexto div.card-body {
+  background-color: #00FF83;
+}
+main div#sobretexto div.card-body p {
+  font-weight: bold;
+  color: #00522A;
+}
+main div#sobretexto > div.card {
+  border-radius: 10px 10px 0px 0px;
+  border-style: none;
+  box-shadow: 2px -1px 4px rgba(0, 82, 42, 0.337254902);
+}
+main div#sobretexto > div#sobrecirurgiao {
+  width: 25rem;
+}
+main div#sobredescricao {
+  background-color: #05C768;
+  height: 235px;
+  padding: 22px 0px 22px 0px;
+  margin-top: 15px;
+}
+main div#sobredescricao > div.card {
+  width: 25rem;
+  height: 190px;
+  padding: 12px 22px 12px 22px;
+  box-shadow: 0px 0px 15px rgb(0, 82, 42);
+}
+main div#sobredescricao > div.card > p {
+  text-align: justify;
+  font-weight: bold;
+  color: #00522A;
+}
+@media (max-width: 989px) {
+  main div.card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 990px) {
+  main div#sobretexto {
+    grid-template-columns: 428px 1fr;
+  }
+  main div#sobredescricao {
+    height: 450px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+  main div#sobredescricao div.card {
+    width: 500px;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 42px;
+  }
+  main div#sobrecirurgiao {
+    width: 400px;
+    height: 500px;
+    margin-left: 2em;
+    margin-right: -25em;
+  }
+  main div#sobrecirurgiao img.card-img-top {
+    border-radius: 30px 0px 0px 0px;
+  }
+  main div.card-body {
+    border-radius: 0px 0px 30px 0px;
+  }
+  main div#sobretexto > div#sobrecirurgiao {
+    width: 400px;
+  }
+  main div#sobretexto > div.card {
+    border-radius: 30px 0px 30px 0px;
+    border-style: none;
+  }
+  main div#sobretexto img, main div.card-body {
+    width: 400px;
+  }
+  main p {
+    text-align: justify;
+  }
+}
+
+footer {
+  margin-top: 500px;
+}
+
+/*# sourceMappingURL=style.css.map */
