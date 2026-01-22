@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -15,14 +16,17 @@ main h1 {
   font-size: 18px;
   text-align: center;
 }
+main {
+  /*INÍCIO SOBRE NÓS*/
+}
 main div#sobretexto {
   display: grid;
 }
 main div#sobrecirurgiao > div.card-body, main div#sobredescricao > div.card {
   display: flex;
-  justify-content: center; /* centraliza horizontal */
-  align-items: center; /* centraliza vertical */
-  text-align: center; /* centraliza o texto */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 20px;
 }
 main div#conjuntosobre {
@@ -110,9 +114,89 @@ main div#sobredescricao > div.card > p {
     text-align: justify;
   }
 }
+main {
+  /*FIM SOBRE NÓS*/
+  /*INÍCIO EXAMES MÉDICOS E CLÍNICOS*/
+}
+main div.cards {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+main div.cards img {
+  width: 50vw;
+  border-radius: 20px 20px 0px 0px;
+}
+main div.cards .cardtexto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #05C768;
+  color: white;
+  font-weight: bolder;
+  width: 50vw;
+  height: 10vw;
+  font-size: 2.5vw;
+  border-radius: 0px 0px 20px 20px;
+}
+@media (min-width: 800px) {
+  main div#tresprimeiros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main div#doisultimos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main div#tresprimeiros div.cards img {
+    width: 250px;
+  }
+  main div#tresprimeiros div.cards .cardtexto {
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+  }
+  main div#doisultimos div.cards img {
+    width: 380px;
+  }
+  main div#doisultimos div.cards .cardtexto {
+    width: 380px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  main div#tresprimeiros div.cards img {
+    width: 300px;
+  }
+  main div#tresprimeiros div.cards .cardtexto {
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1070px) {
+  main div#doisultimos div.cards img {
+    width: 524px;
+  }
+  main div#doisultimos div.cards .cardtexto {
+    width: 524px;
+    height: 80px;
+    font-size: 20px;
+  }
+}
+main {
+  /*FIM EXAMES MÉDICOS E CLÍNICOS*/
+}
 
 footer {
-  margin-top: 500px;
+  margin-top: 5000px;
 }
 
 /*# sourceMappingURL=style.css.map */
