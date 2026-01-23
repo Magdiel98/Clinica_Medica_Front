@@ -193,10 +193,111 @@ main div.cards .cardtexto {
 }
 main {
   /*FIM EXAMES MÉDICOS E CLÍNICOS*/
+  /*INÍCIO AGENDAR*/
+}
+main div#agendar {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main div#agendar div#duasimagens {
+  margin-left: auto;
+  margin-right: auto;
+}
+main div#agendar div#duasimagens img {
+  margin-left: 2vw;
+  margin-right: auto;
+}
+main div#boxagendar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 93vw;
+  height: 72vw;
+  color: white;
+  font-weight: bolder;
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img_index/clinica.jpg");
+  border-radius: 20px;
+  overflow: hidden;
+}
+main div#boxagendar p {
+  font-size: 20px;
+  font-weight: bold;
+}
+main div#boxagendar button {
+  color: white;
+  width: 140px;
+  height: 55px;
+  border-radius: 20px;
+  border-style: none;
+  font-weight: bold;
+  background-color: #01c466;
+  box-shadow: 2px 2px 2px gray;
+  transition: background-color 0.5s;
+}
+main div#boxagendar button:hover {
+  background-color: #00522A;
+}
+main div#boxagendar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(123, 245, 186, 0.4784313725); /* verde transparente */
+  z-index: 1;
+}
+main div#boxagendar p,
+main div#boxagendar button {
+  position: relative;
+  z-index: 2;
+}
+main div#duasimagens img {
+  width: 200px;
+  height: 450px;
+  box-shadow: 2px 2px 2px gray;
+}
+@media (min-width: 600px) {
+  main div#agendar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main div#boxagendar {
+    width: 500px;
+    height: 450px;
+  }
+}
+@media (max-width: 999px) {
+  main div#duasimagens {
+    display: none;
+  }
+  main div#agendar {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+main {
+  /*FIM AGENDAR*/
 }
 
 footer {
-  margin-top: 5000px;
+  margin-top: 500vw;
+}
+@media (min-width: 600px) {
+  footer {
+    margin-top: 455vw;
+  }
+}
+@media (min-width: 800px) {
+  footer {
+    margin-top: 2000px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

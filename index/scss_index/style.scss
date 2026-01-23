@@ -254,9 +254,120 @@ main{
     }
     /*FIM EXAMES MÉDICOS E CLÍNICOS*/
 
+    /*INÍCIO AGENDAR*/
+    div#agendar{
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        div#duasimagens{
+           margin-left: auto;
+           margin-right: auto;
+           img{
+            margin-left: 2vw;
+            margin-right: auto;
+           }
+        }
+    }
+    div#boxagendar{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 93vw;
+        height: 72vw;
+        color: white;
+        font-weight: bolder;
+        background-size: 100% 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../img_index/clinica.jpg");
+        border-radius: 20px;
+        overflow: hidden;
+        p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button{
+            color: white;
+            width: 140px;
+            height: 55px;
+            border-radius: 20px;
+            border-style: none;
+            font-weight: bold;
+            background-color: #01c466;
+            box-shadow: 2px 2px 2px gray;
+            transition: background-color .5s;
+        }
+
+        button:hover{
+            background-color: #00522A;
+        }
+    }
+
+    div#boxagendar::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: #7bf5ba7a; /* verde transparente */
+        z-index: 1;
+    }
+
+    div#boxagendar p,
+    div#boxagendar button{
+        position: relative;
+        z-index: 2;
+    }
+
+    div#duasimagens{
+        img{
+            width: 200px;
+            height: 450px;
+            box-shadow: 2px 2px 2px gray;
+        }
+    }
+
+
+    @media(min-width: 600px){
+        div#agendar{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        div#boxagendar{
+            width: 500px;
+            height: 450px;
+        }
+    }
+
+    @media(max-width: 999px){
+        div#duasimagens{
+            display: none;
+        }
+
+        div#agendar{
+             grid-template-columns: 1fr;
+             justify-items: center;
+        }
+    }
+
+    /*FIM AGENDAR*/
+
 }
 
 
 footer{
-    margin-top: 5000px;
+    margin-top: 500vw;
+
+    @media(min-width: 600px)
+    {
+        margin-top: 455vw;
+    }
+
+    @media(min-width: 800px){
+        margin-top: 2000px;
+    }
 }
