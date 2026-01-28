@@ -33,30 +33,31 @@
         </header>
         <main>
             <h1>AGENDAR CONSULTA</h1>
-            <form>
+            <form id="form">
                 <div class="mb-3">
-                    <label for="name" class="form-label">NOME COMPLETO</label>
-                    <input type="text" id="name" name="name" class="form-control">
+                    <label for="data" class="form-label">DATA</label>
+                    <input type="date" id="data" name="data" class="form-control">
                 </div>
                 
                 <div class="mb-3">
-                    <label for="telefone" class="form-label">TELEFONE</label>
-                    <input type="tel" id="telefone" name="telefone" class="form-control">
+                    <label for="hora" class="form-label">HORÁRIO</label>
+                    <input type="time" id="hora" name="hora" class="form-control">
                 </div>
 
-                <div class="mb-3">
-                    <label for="email" class="form-label">EMAIL</label>
-                    <input type="email" id="email" name="email" class="form-control">
+               <div class="mb-3">
+                    <label for="paciente" class="form-label">PACIENTE</label>
+                    <select name="paciente" id="paciente" class="form-select">
+                    </select>
                 </div>
                 
                 <div class="mb-3">
                     <label for="medico" class="form-label">MÉDICO</label>
                     <select name="medico" id="medico" class="form-select">
-                        <option value="exemplo">Exemplo</option>
                     </select>
                 </div>
+                <button type="submit" id="enviar">ENVIAR</button>
             </form>
-            <button id="enviar">ENVIAR</button>
+            
         </main>
         <footer>
             <div>
@@ -74,5 +75,6 @@
         </footer>
     </body>
     <script src="../js/javascript.js"></script>
+    <script src="js_agendar/javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </html>
