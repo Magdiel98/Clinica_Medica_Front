@@ -26,7 +26,7 @@ main form label {
   font-weight: bolder;
   color: #00BF62;
 }
-main form input, main form select {
+main form input, main form select, main form textarea {
   box-shadow: 0px 2px 1px #C8C8C8;
 }
 main button#enviar {
@@ -47,10 +47,6 @@ main button#enviar {
 main button#enviar:hover {
   background-color: #02ad5b;
 }
-main p#cadastro {
-  margin-top: 20px;
-  text-align: center;
-}
 @media (min-width: 850px) {
   main form {
     width: 705px;
@@ -58,7 +54,7 @@ main p#cadastro {
 }
 
 footer {
-  margin-top: 660px;
+  margin-top: 820px;
 }
 
 /*# sourceMappingURL=style.css.map */
