@@ -3,6 +3,28 @@ const addMedicoForm = document.getElementById('form');
 
 addMedicoForm.addEventListener('submit', submitMedico);
 
+function validacao(medicoData){
+    const regexCRM = /^CRM\/[A-Z]{2} \d{6}$/i;
+    const regexTelefone = /^\(\d{2}\)\d{4,5}-\d{4}$/;
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!regexCRM.test(medicoData.crm)){
+        alert('Formato de CRM inválido! Use: CRM/UF 123456');
+        return false;
+    }
+
+    if(!regexTelefone.test(medicoData.telefones[0])){
+        alert('Telefone inválido! Use: (XX)XXXXX-XXXX');
+        return false;
+    }
+
+    if(!regexEmail.test(medicoData.email)){
+        alert('Digite um Email válido!');
+        return false;
+    }
+
+    return true; 
+}
 
 function submitMedico(event){
     event.preventDefault();
@@ -17,16 +39,17 @@ function submitMedico(event){
         ]
     };
 
-    addMedico(medicoData)
-        .then(() => {
-            alert('Médico cadastrado com sucesso!');
-            addMedicoForm.reset();
-        })
-        .catch(error => {
-            console.error('Detalhes do erro:', error);
-            alert('Erro: ' + error.message);
-        });
-
+    if(validacao(medicoData)){
+        addMedico(medicoData)
+            .then(() => {
+                alert('Médico cadastrado com sucesso!');
+                addMedicoForm.reset();
+            })
+            .catch(error => {
+                console.error('Detalhes do erro:', error);
+                alert('Erro: ' + error.message);
+            });
+    }        
 }
 
 function addMedico(medicoData){

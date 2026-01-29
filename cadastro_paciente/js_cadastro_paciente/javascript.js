@@ -3,6 +3,28 @@ const addPacienteForm = document.getElementById('form');
 
 addPacienteForm.addEventListener('submit', submitPaciente);
 
+function validacao(pacienteData){
+    const regexCPF = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+    const regexTelefone = /^\(\d{2}\)\d{4,5}-\d{4}$/;
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!regexCPF.test(pacienteData.cpf)){
+        alert('Formato de CPF inválido! Use: XXX.XXX.XXX-XX');
+        return false;
+    }
+
+    if(!regexTelefone.test(pacienteData.telefones[0])){
+        alert('Telefone inválido! Use: (XX)XXXXX-XXXX');
+        return false;
+    }
+
+    if(!regexEmail.test(pacienteData.email)){
+        alert('Digite um Email válido!');
+        return false;
+    }
+
+    return true; 
+}
 
 function submitPaciente(event){
     event.preventDefault();
@@ -17,15 +39,17 @@ function submitPaciente(event){
         ]
     };
 
-    addPaciente(pacienteData)
-        .then(() => {
-            alert('Paciente cadastrado com sucesso!');
-            addPacienteForm.reset();
-        })
-        .catch(error => {
-            console.error('Detalhes do erro:', error);
-            alert('Erro: ' + error.message);
-        });
+    if(validacao(pacienteData)){
+        addPaciente(pacienteData)
+            .then(() => {
+                alert('Paciente cadastrado com sucesso!');
+                addPacienteForm.reset();
+            })
+            .catch(error => {
+                console.error('Detalhes do erro:', error);
+                alert('Erro: ' + error.message);
+            });
+    }
 
 }
 

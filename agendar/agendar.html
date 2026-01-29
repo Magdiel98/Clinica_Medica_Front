@@ -36,23 +36,23 @@
             <form id="form">
                 <div class="mb-3">
                     <label for="data" class="form-label">DATA</label>
-                    <input type="date" id="data" name="data" class="form-control">
+                    <input type="date" id="data" name="data" class="form-control" required>
                 </div>
                 
                 <div class="mb-3">
                     <label for="hora" class="form-label">HORÁRIO</label>
-                    <input type="time" id="hora" name="hora" class="form-control">
+                    <input type="time" id="hora" name="hora" class="form-control" required>
                 </div>
 
                <div class="mb-3">
                     <label for="paciente" class="form-label">PACIENTE</label>
-                    <select name="paciente" id="paciente" class="form-select">
+                    <select name="paciente" id="paciente" class="form-select" required>
                     </select>
                 </div>
                 
                 <div class="mb-3">
                     <label for="medico" class="form-label">MÉDICO</label>
-                    <select name="medico" id="medico" class="form-select">
+                    <select name="medico" id="medico" class="form-select" required>
                     </select>
                 </div>
                 <button type="submit" id="enviar">ENVIAR</button>
