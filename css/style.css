@@ -80,7 +80,7 @@ header button#botaolista.btn:hover {
 }
 
 main {
-  height: 116px;
+  min-height: 116px;
 }
 
 footer {
