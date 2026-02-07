@@ -13,3 +13,16 @@ This project was developed to link patients and doctors through a scheduling sys
 
 ## Installation Instructions
 
+You don't need to install anything to run this project.
+
+## Usage
+
+To use this interface, download the project to your computer and run it locally.
+After download this project, you can open any page. 
+
+![Navigation Página Inicial](./prints/nav_inicial.png)
+![Exemplo da Página Inicial](./prints/exemplo_inicial.png)
+![Footer](./prints/footer.png)
+![Consultas](./prints/consultas.png)
+![Agendar Consultas](./prints/agendar_consultas.png)
+![Corpo Clínico](./prints/corpo_clinico.png)
