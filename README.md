@@ -31,3 +31,20 @@ After download this project, you can open any page.
 ## License 
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Contributing 
+
+Contributions are always welcome! If you want to improve this clinic system, follow these steps: 
+
+1. Fork this project; 
+2. Create a Feature Branch;
+3. Commit your changes;
+4. Push to the Branch;
+5. Open a Pull Request. 
+
+Please make sure to update tests and documentation as appropriate. 
+
+
+## Contributors or Owners
+
+**[Magdiel Gomes Ferreira]** - [GitHub Profile](https://github.com/Magdiel98)
