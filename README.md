@@ -27,11 +27,6 @@ After download this project, you can open any page.
 ![Agendar Consultas](./prints/agendar_consultas.png)
 ![Corpo Clínico](./prints/corpo_clinico.png)
 
-
-## License 
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Contributing 
 
 Contributions are always welcome! If you want to improve this clinic system, follow these steps: 
@@ -48,3 +43,8 @@ Please make sure to update tests and documentation as appropriate.
 ## Contributors or Owners
 
 **[Magdiel Gomes Ferreira]** - [GitHub Profile](https://github.com/Magdiel98)
+
+## License 
+
+This project is licensed under the [MIT License](LICENSE).
+
