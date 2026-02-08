@@ -26,3 +26,8 @@ After download this project, you can open any page.
 ![Consultas](./prints/consultas.png)
 ![Agendar Consultas](./prints/agendar_consultas.png)
 ![Corpo Clínico](./prints/corpo_clinico.png)
+
+
+## License 
+
+This project is licensed under the [MIT License](LICENSE).
