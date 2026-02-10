@@ -16,6 +16,11 @@ main{
         text-align: center;
     }
 
+    a#cadastro{
+        display: block;
+        text-align: center;
+    }
+
     div#conjunto{
         display: grid;
         grid-template-columns: repeat(2, 1fr);

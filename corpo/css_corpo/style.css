@@ -15,6 +15,10 @@ main h1 {
   font-size: 18px;
   text-align: center;
 }
+main a#cadastro {
+  display: block;
+  text-align: center;
+}
 main div#conjunto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
