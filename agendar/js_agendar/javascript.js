@@ -46,7 +46,7 @@ function listPacientes(){
 
 
 function fetchMedicos(){
-    return fetch('https://clinica-medica-l4xt.onrender.com/medicos')
+    return fetch('https://clinica-medica-8pva.onrender.com/medicos')
     .then(response => response.json())
     .then(medicos => {
         // 'medicos' já é um array, vamos mapear o id real do objeto
@@ -58,7 +58,7 @@ function fetchMedicos(){
 }
 
 function fetchPacientes(){
-    return fetch('https://clinica-medica-l4xt.onrender.com/pacientes')
+    return fetch('https://clinica-medica-8pva.onrender.com/pacientes')
     .then(response => response.json())
     .then(pacientes => {
         return pacientes.map(p => new Paciente({

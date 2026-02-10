@@ -23,7 +23,7 @@ function listMedicos(){
 }
 
 function fetchMedicos(){
-    return fetch('https://clinica-medica-l4xt.onrender.com/medicos')
+    return fetch('https://clinica-medica-8pva.onrender.com/medicos')
     .then(response => {
         if(!response.ok){
             throw new Error('Resposta de rede não foi ok');

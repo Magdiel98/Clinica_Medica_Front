@@ -54,7 +54,7 @@ function submitPaciente(event){
 }
 
 function addPaciente(pacienteData){
-    return fetch("https://clinica-medica-l4xt.onrender.com/pacientes", {
+    return fetch("https://clinica-medica-8pva.onrender.com/pacientes", {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json',

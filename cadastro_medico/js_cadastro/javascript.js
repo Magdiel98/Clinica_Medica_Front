@@ -53,7 +53,7 @@ function submitMedico(event){
 }
 
 function addMedico(medicoData){
-    return fetch("https://clinica-medica-l4xt.onrender.com/medicos", {
+    return fetch("https://clinica-medica-8pva.onrender.com/medicos", {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json',

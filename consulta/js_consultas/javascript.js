@@ -24,7 +24,7 @@ function listConsultas(){
 }
 
 function fetchConsultas(){
-    return fetch('https://clinica-medica-l4xt.onrender.com/consultas')
+    return fetch('https://clinica-medica-8pva.onrender.com/consultas')
     .then(response => {
         if(!response.ok){
             throw new Error('Resposta de rede não foi ok');
