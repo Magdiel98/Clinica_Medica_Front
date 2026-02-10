@@ -137,7 +137,7 @@ function submitAgenda(event){
 }
 
 function addAgenda(agendaData){
-    return fetch("https://clinica-medica-l4xt.onrender.com/consultas", {
+    return fetch("https://clinica-medica-8pva.onrender.com/consultas", {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json',
